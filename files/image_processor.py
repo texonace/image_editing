@@ -115,7 +115,10 @@ def dir_check(data_path, end_path) -> None:
     else:
         print("No Data Directory to read from, Please check file name and path")
 
-dir_check(data_folder_path, end_folder_path)
+
+if __name__ == '__main__':
+    dir_check(data_folder_path, end_folder_path)
+
 
 
 
