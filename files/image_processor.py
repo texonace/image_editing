@@ -85,7 +85,7 @@ def data_input(end_path, data_path) -> list:
 ]
 
 def dir_check(data_path, end_path) -> None:
-    print('Paths:', data_folder_path, end_folder_path,)
+    print('Paths:', data_path, end_path,)
     if os.path.isdir(data_path) and os.path.exists(data_path):
 
         try:
