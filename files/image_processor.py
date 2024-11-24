@@ -13,8 +13,6 @@ if __name__ == '__main__':
     data_folder_path: str = input("Enter the location of the folder from where you want all the images to edited: ")
     end_folder_path: str = input("Enter the location of the folder where you want store all the edited images: ")
 
-
-
 filters = ["BLUR", "CONTOUR", "DETAIL", "EMBOSS", "SHARPEN", "SMOOTH", "RESIZE"]
 to_gray_scale = False
 
