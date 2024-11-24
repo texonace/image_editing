@@ -8,10 +8,11 @@ import sys, os
 
 # data_folder_path: str = sys.argv[1]
 # end_folder_path: str = sys.argv[2]
+if __name__ == '__main__':
+    print(f"Example of folder path: C:\\User\\Documents\\Folder_Name")
+    data_folder_path: str = input("Enter the location of the folder from where you want all the images to edited: ")
+    end_folder_path: str = input("Enter the location of the folder where you want store all the edited images: ")
 
-print(f"Example of folder path: C:\\User\\Documents\\Folder_Name")
-data_folder_path: str = input("Enter the location of the folder from where you want all the images to edited: ")
-end_folder_path: str = input("Enter the location of the folder where you want store all the edited images: ")
 
 
 filters = ["BLUR", "CONTOUR", "DETAIL", "EMBOSS", "SHARPEN", "SMOOTH", "RESIZE"]
