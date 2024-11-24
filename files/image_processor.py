@@ -6,8 +6,13 @@ from PIL import Image as image
 from PIL import ImageFilter as filter
 import sys, os
 
-data_folder_path: str = sys.argv[1]
-end_folder_path: str = sys.argv[2]
+# data_folder_path: str = sys.argv[1]
+# end_folder_path: str = sys.argv[2]
+
+print(f"Example of folder path: C:\\User\\Documents\\Folder_Name")
+data_folder_path: str = input("Enter the location of the folder from where you want all the images to edited: ")
+end_folder_path: str = input("Enter the location of the folder where you want store all the edited images: ")
+
 
 filters = ["BLUR", "CONTOUR", "DETAIL", "EMBOSS", "SHARPEN", "SMOOTH", "RESIZE"]
 to_gray_scale = False
@@ -90,7 +95,7 @@ def dir_check(data_path, end_path) -> None:
                 print('Output Directory Found\n')
                 print("#"*50)
                 file_list: list = data_input(end_path, data_path)
-                print(file_list)
+                # print(file_list)
                 image_processor(file_list, end_path)
             else:
                 print("No Such Output directory found. Do you want to create a new Directory. Type 'Yes' or 'No'")
@@ -99,7 +104,7 @@ def dir_check(data_path, end_path) -> None:
                         print('Output Directory Found\n')
                         print("#" * 50)
                         file_list: list = data_input(end_path, data_path)
-                        print(file_list)
+                        # print(file_list)
                         image_processor(file_list, end_path)
                     case 'no':
                         print('Program Closing')
