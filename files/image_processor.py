@@ -14,7 +14,7 @@ if __name__ == '__main__':
     end_folder_path: str = input("Enter the location of the folder where you want store all the edited images: ")
 
 filters = ["BLUR", "CONTOUR", "DETAIL", "EMBOSS", "SHARPEN", "SMOOTH", "RESIZE"]
-to_gray_scale = False
+to_gray_scale: bool = False
 
 def image_processor(file_list: list | None = None, path: str | None = None) -> None:
     '''
